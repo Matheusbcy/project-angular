@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+.container-card {
+    padding: 10px;
+    box-shadow: 4px 4px gray;
+}
+.mat-accent {
+    margin-left: 14px;
+}
+.mat-title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+button {
+    margin-top: 20px;
+}
