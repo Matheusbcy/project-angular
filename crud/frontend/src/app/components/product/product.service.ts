@@ -17,6 +17,7 @@ export class ProductService {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
+      panelClass: 'msg-success'
     });
   }
   create(product: Product): Observable<Product> {
@@ -37,8 +38,8 @@ export class ProductService {
     return this.http.put<Product>(url, product);
   }
 
-  delete(id: string){
+  delete(id: number): Observable<Product> {
     const url = `${this.baseURL}/${id}`;
-    return this.http.delete(url)
+    return this.http.delete<Product>(url);
   }
 }
